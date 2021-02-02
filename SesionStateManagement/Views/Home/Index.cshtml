@@ -1,0 +1,13 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Welcome</h1>
+    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+</div>
+<br />
+
+<h3>Username : @HttpContextAccessor.HttpContext.Session.GetString("Username")</h3>
+<br />
+<h3>Age: @HttpContextAccessor.HttpContext.Session.GetInt32("Age")</h3>

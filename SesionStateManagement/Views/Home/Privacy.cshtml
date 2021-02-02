@@ -1,0 +1,9 @@
+﻿@{
+    ViewData["Title"] = "Privacy Policy";
+}
+<h1>@ViewData["Title"]</h1>
+
+<p>Use this page to detail your site's privacy policy.</p>
+<h3>Username : @HttpContextAccessor.HttpContext.Session.GetString("Username")</h3>
+<br />
+<h3>Age: @HttpContextAccessor.HttpContext.Session.GetInt32("Age")</h3>
